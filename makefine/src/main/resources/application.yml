@@ -1,0 +1,13 @@
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mysql://rm-2zetvkzn338nfxz6m8o.mysql.rds.aliyuncs.com:3306/test_yfyf
+    username: test_yfyf
+    password: H=e3yw3MdYpcA
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  typeAliasesPackage: com.zhuchuanxiao.makefine.entity
+  mapperLocations: classpath:mapper/*.xml
